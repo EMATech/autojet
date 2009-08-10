@@ -1,0 +1,1117 @@
+<ui version="4.0" >
+ <author>Raphaël Doursenaud</author>
+ <class>maxContainer</class>
+ <widget class="QWidget" name="maxContainer" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>0</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>16777215</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="palette" >
+   <palette>
+    <active>
+     <colorrole role="WindowText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>221</red>
+        <green>223</green>
+        <blue>228</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>85</red>
+        <green>85</green>
+        <blue>85</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>199</red>
+        <green>199</green>
+        <blue>199</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>244</red>
+        <green>249</green>
+        <blue>252</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>103</red>
+        <green>141</green>
+        <blue>178</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="HighlightedText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>238</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>82</red>
+        <green>24</green>
+        <blue>139</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>232</red>
+        <green>232</green>
+        <blue>232</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>221</red>
+        <green>223</green>
+        <blue>228</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>85</red>
+        <green>85</green>
+        <blue>85</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>199</red>
+        <green>199</green>
+        <blue>199</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>244</red>
+        <green>249</green>
+        <blue>252</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>103</red>
+        <green>141</green>
+        <blue>178</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="HighlightedText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>238</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>82</red>
+        <green>24</green>
+        <blue>139</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>232</red>
+        <green>232</green>
+        <blue>232</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>221</red>
+        <green>223</green>
+        <blue>228</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>85</red>
+        <green>85</green>
+        <blue>85</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>199</red>
+        <green>199</green>
+        <blue>199</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>199</red>
+        <green>199</green>
+        <blue>199</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>244</red>
+        <green>249</green>
+        <blue>252</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>244</red>
+        <green>249</green>
+        <blue>252</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>86</red>
+        <green>117</green>
+        <blue>148</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="HighlightedText" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>238</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>82</red>
+        <green>24</green>
+        <blue>139</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>232</red>
+        <green>232</green>
+        <blue>232</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="font" >
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="maxLayout" >
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <property name="sizeConstraint" >
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <property name="margin" >
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2" >
+     <property name="verticalSpacing" >
+      <number>6</number>
+     </property>
+     <item row="0" column="0" >
+      <widget class="QLabel" name="symbol" >
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="pixmap" >
+        <pixmap resource="autojet.qrc" >:/icons/icons/downarrow.xpm</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QLabel" name="number" >
+       <property name="font" >
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text" >
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" >
+      <widget class="QProgressBar" name="progressBar" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Expanding" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="value" >
+        <number>0</number>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" >
+      <widget class="QLabel" name="track" >
+       <property name="text" >
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" >
+      <widget class="QToolButton" name="cancelButton" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip" >
+        <string>Cancel</string>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Cancel</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="autojet.qrc" >
+         <normaloff>:/icons/icons/cancel.svg</normaloff>:/icons/icons/cancel.svg</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle" >
+        <enum>Qt::ToolButtonIconOnly</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_5" >
+     <item rowspan="3" row="0" column="0" >
+      <widget class="QPushButton" name="eject" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Eject/Load Tray (CTRL+E, CTRL+L)</string>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Eject/Load‬</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="autojet.qrc" >
+         <normaloff>:/icons/icons/eject.svg</normaloff>:/icons/icons/eject.svg</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="shortcut" >
+        <string>Ctrl+E, Ctrl+L</string>
+       </property>
+       <property name="autoDefault" >
+        <bool>false</bool>
+       </property>
+       <property name="default" >
+        <bool>false</bool>
+       </property>
+       <property name="flat" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QLabel" name="model" >
+       <property name="text" >
+        <string>Checking Drive...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" colspan="3" >
+      <widget class="QLabel" name="currSpeed" >
+       <property name="enabled" >
+        <bool>true</bool>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Current Speed: 0.0x</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5" colspan="3" >
+      <widget class="QLabel" name="label_3" >
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text" >
+        <string>Speed</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="0" column="8" >
+      <widget class="QSpinBox" name="speedBox" />
+     </item>
+     <item rowspan="3" row="1" column="2" colspan="5" >
+      <widget class="QLabel" name="size" >
+       <property name="text" >
+        <string>0 MB</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="2" column="6" colspan="3" >
+      <widget class="QCheckBox" name="ejectBox" >
+       <property name="enabled" >
+        <bool>true</bool>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text" >
+        <string>Auto Eject</string>
+       </property>
+       <property name="checked" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="3" column="0" >
+      <widget class="QPushButton" name="create" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Create Image (CTRL+C)</string>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Create Image</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="autojet.qrc" >
+         <normaloff>:/icons/icons/create_image.svg</normaloff>:/icons/icons/create_image.svg</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+C</string>
+       </property>
+       <property name="flat" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="9" row="3" column="1" >
+      <widget class="QTabWidget" name="tabWidget" >
+       <property name="currentIndex" >
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab" >
+        <attribute name="title" >
+         <string>Selected Tracks</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout" >
+         <property name="margin" >
+          <number>0</number>
+         </property>
+         <item row="0" column="0" >
+          <widget class="QTextEdit" name="tracks" >
+           <property name="readOnly" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_3" >
+        <attribute name="title" >
+         <string>Warnings and Errors</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_3" >
+         <property name="margin" >
+          <number>0</number>
+         </property>
+         <item row="0" column="0" >
+          <widget class="QTextEdit" name="errors" >
+           <property name="readOnly" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2" >
+        <attribute name="title" >
+         <string>Advanced Output</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4" >
+         <property name="margin" >
+          <number>0</number>
+         </property>
+         <item row="0" column="0" >
+          <widget class="QTextEdit" name="output" >
+           <property name="readOnly" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item rowspan="2" row="4" column="2" colspan="2" >
+      <widget class="QCheckBox" name="idleBox" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="autoFillBackground" >
+        <bool>true</bool>
+       </property>
+       <property name="text" >
+        <string>Idle</string>
+       </property>
+       <property name="checkable" >
+        <bool>true</bool>
+       </property>
+       <property name="checked" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="3" row="5" column="0" >
+      <widget class="QPushButton" name="blank" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Blank Disc (CTRL+B)</string>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Blank Disc</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="autojet.qrc" >
+         <normaloff>:/icons/icons/blank.svg</normaloff>:/icons/icons/blank.svg</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+B</string>
+       </property>
+       <property name="flat" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="5" column="4" colspan="3" >
+      <widget class="QLabel" name="label_4" >
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="autoFillBackground" >
+        <bool>false</bool>
+       </property>
+       <property name="text" >
+        <string>Speed</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="5" column="7" colspan="2" >
+      <widget class="QComboBox" name="newSpeedBox" >
+       <item>
+        <property name="text" >
+         <string>Auto</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>4x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>8x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>10x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>12x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>18x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>20x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>24x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>32x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>48x</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item rowspan="2" row="6" column="2" colspan="2" >
+      <widget class="QCheckBox" name="simulation" >
+       <property name="enabled" >
+        <bool>true</bool>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text" >
+        <string>Simulation Mode</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="7" column="4" colspan="3" >
+      <widget class="QLabel" name="label_5" >
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="autoFillBackground" >
+        <bool>false</bool>
+       </property>
+       <property name="text" >
+        <string>Eject Mode</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="7" column="7" colspan="2" >
+      <widget class="QComboBox" name="newEjectBox" >
+       <item>
+        <property name="text" >
+         <string>All Discs</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Good Discs Only</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Bad Discs Only</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Manual</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item rowspan="2" row="8" column="0" >
+      <widget class="QPushButton" name="image" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Set Image (CTRL+S)</string>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Set Image</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="autojet.qrc" >
+         <normaloff>:/icons/icons/set_image.svg</normaloff>:/icons/icons/set_image.svg</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+S</string>
+       </property>
+       <property name="flat" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2" colspan="2" >
+      <widget class="QCheckBox" name="verify" >
+       <property name="enabled" >
+        <bool>true</bool>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text" >
+        <string>Verify</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="9" column="2" >
+      <widget class="QLabel" name="label" >
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text" >
+        <string>FIFO</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="9" column="3" colspan="6" >
+      <widget class="QProgressBar" name="fifoBar" >
+       <property name="value" >
+        <number>0</number>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="2" row="10" column="0" >
+      <widget class="QPushButton" name="burn" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Burn Disc (CTRL+W)</string>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Burn Disc</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="autojet.qrc" >
+         <normaloff>:/icons/icons/burn.svg</normaloff>:/icons/icons/burn.svg</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>36</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+W</string>
+       </property>
+       <property name="flat" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2" >
+      <widget class="QLabel" name="label_2" >
+       <property name="layoutDirection" >
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text" >
+        <string>Buffer</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3" colspan="6" >
+      <widget class="QProgressBar" name="bufferBar" >
+       <property name="value" >
+        <number>0</number>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="9" />
+ <resources>
+  <include location="autojet.qrc" />
+ </resources>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX" >
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY" >
+   <number>10</number>
+  </property>
+  <property name="gridSnapX" >
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY" >
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible" >
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

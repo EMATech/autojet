@@ -1,0 +1,17 @@
+Source: autojet
+Section: x11
+Priority: optional
+Maintainer: Raphaël Doursenaud <rdoursenaud@free.fr>
+Homepage: http://turbojet.sourceforge.net/
+Build-Depends: cdbs, debhelper (>= 5), autotools-dev, libqt4-dev
+Standards-Version: 3.7.3
+
+Package: autojet
+Architecture: any
+Depends: ${shlibs:Depends}, cdrecord, cdrdao, dvd+rw-tools, eject, mpg123, vorbis-tools, kdebase-bin
+Conflicts: turbojet
+Description: Frontend for burning multiple CDs/DVDs at once - EMA Tech. package
+ autojet is a frontend to various command line CD and DVD writing programs.
+ Unlike other frontends it offers support to use multiple devices at once and
+ an easy workflow for burning CDs and DVDs on demand.
+

@@ -1,0 +1,20 @@
+*Auto Mode (default):
+	- Insert Master
+	- Insert Blank(s)
+	- (Do NOT press a single button!)
+	- Burn!
+*Change state of the buttons according to possible actions
+*Autodetect available speeds and display these on the speed entry along with auto
+*Support other screen resolutions (stretch maximum.ui)
+*Better blanking support ?
+	- allow "all" blanking
+	- prompt the user for blanking if a not blank cd/dvd rw is inserted and write is pressed
+*Add possibility for the first burner to be the copy source (like a real duplicator)
+*Hide Current speed while not burning
+*Disable all buttons (including ACPI power off) while burning/creating image/blanking
+*Copy Counter
+*Implement "cancel"
+*Verify
+*Eject modes
+*Branding (EMA Tech. and GPLv3 in about dialog)
+*cdrdao options (write_driver: "generic-mmc:0x00000010" ou write_driver: "generic-mmc-raw" ...)

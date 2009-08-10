@@ -1,0 +1,14 @@
+Some short install instructions:
+You need: Qt4, wodim, cdrdao, growisofs, mpg123, ogg123, eject, kdesu
+
+In order to build from sources perform the following steps:
+qmake-qt4 turbojet2.pro
+make
+
+This will give you an executable in the subdir bin/ (called autojet)
+
+
+Now you can install the software (default goes to /usr/local/)
+
+As superuser do:
+make install

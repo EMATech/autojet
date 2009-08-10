@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="icons" >
+    <file>icons/auto.svg</file>
+    <file>icons/manual.svg</file>
+    <file>icons/rightarrow.xpm</file>
+    <file>icons/downarrow.xpm</file>
+    <file>icons/blank.svg</file>
+    <file>icons/burn.svg</file>
+    <file>icons/cancel.svg</file>
+    <file>icons/configure.svg</file>
+    <file>icons/create_image.svg</file>
+    <file>icons/eject.svg</file>
+    <file>icons/exit.svg</file>
+    <file>icons/help.svg</file>
+    <file>icons/autojet.svg</file>
+    <file>icons/set_image.svg</file>
+    <file>icons/shutdown.svg</file>
+  </qresource>
+</RCC>

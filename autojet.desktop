@@ -1,0 +1,19 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Exec=autojet
+Icon=autojet
+#DocPath=autojet/index.html
+GenericName=Burn Multiple CDs and DVDs At Once
+GenericName[de]=Mehrere CDs und DVDs auf einmal brennen
+GenericName[fr]=Grave Plusieurs CDs et DVDs en Simultané
+Comment=CD/DVD writing program for multiple devices
+Comment[de]=CD-Brennprogramm für mehrere Geräte
+Comment[fr]=Programme de gravure de CD/DVD pour plusieurs périphériques
+Terminal=false
+Name=AutoJet
+MimeType=application/x-autojet
+X-KDE-StartupNotify=true
+X-KDE-NativeMimeType=application/x-autojet
+Categories=KDE;Application;AudioVideo;DiscBurning;
+X-DCOP-ServiceType=Unique

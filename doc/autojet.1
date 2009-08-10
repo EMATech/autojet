@@ -1,0 +1,103 @@
+.TH AUTOJET 1 "December 10, 2008"
+.SH NAME
+AutoJet  \- Burn multiple CDs or DVDs at once
+.SH SYNOPSIS
+.B autojet
+.RI [\fIQt-options\fR]
+.SH DESCRIPTION
+This manual page documents briefly the
+.B AutoJet 
+application.
+.PP
+\fBAutojet\fP allows you to burn multiple and different DVD or CD images
+at once on different devices. In fact it is a simple frontend to command-line
+CD writing programs like wodim, cdrdao and growisofs. In difference to other
+CD burning applications and frontends it focuses on the on-demand production of CDs and DVDs.
+.SH OPTIONS
+This program only supports the standard command line options for Qt based programs.
+A summary of this options is included below.
+.TP
+.B \-style= style
+sets the application GUI style. Possible values are motif, windows, and platinum. If you compiled Qt with additional styles or have additional styles as plugins these will be available to the -style command line option.
+.TP
+.B \-style style
+is the same as listed above.
+.TP
+.B \-session= session
+restores the application from an earlier session.
+.TP
+.B \-session session
+is the same as listed above.
+.TP
+.B \-widgetcount
+prints debug message at the end about number of widgets left undestroyed and maximum number of widgets existed at the same time
+.TP
+.B \-reverse
+sets the application's layout direction to Qt::RightToLeft
+.TP
+.TP 
+.B \-display display
+sets the X display (default is $DISPLAY).
+.TP 
+.B \-geometry geometry
+sets the client geometry of the first window that is shown.
+.TP 
+.B \-fn 
+or
+.B \-font font
+defines the application font. The font should be specified using an X logical font description.
+.TP 
+.B \-bg 
+or
+.B \-background color
+sets the default background color and an application palette (light and dark shades are calculated).
+.TP 
+.B \-fg 
+or 
+.B \-foreground color
+sets the default foreground color.
+.TP 
+.B \-btn 
+or 
+.B \-button color
+sets the default button color.
+.TP 
+.B \-name name
+sets the application name.
+.TP 
+.B \-title title
+sets the application title.
+.TP 
+.B \-visual TrueColor
+forces the application to use a TrueColor visual on an 8\-bit display.
+.TP 
+.B \-ncols count
+limits the number of colors allocated in the color cube on an 8\-bit display, if the application is using the QApplication::ManyColor color specification. If count is 216 then a 6x6x6 color cube is used (i.e. 6 levels of red, 6 of green, and 6 of blue); for other values, a cube approximately proportional to a 2x3x1 cube is used.
+.TP 
+.B \-cmap
+causes the application to install a private color map on an 8\-bit display.
+.TP 
+.B \-im
+sets the input method server (equivalent to setting the XMODIFIERS environment variable)
+.TP 
+.B \-noxim
+disables the input method framework ("no X input method").
+.TP 
+.B \-inputstyle
+defines how the input is inserted into the given widget. E.g., onTheSpot makes the input appear directly in the widget, while overTheSpot makes the input appear in a box floating over the widget and is not inserted until the editing is done.
+
+.SH SEE ALSO
+.BR wodim (1),
+.BR cdrdao (1),
+.BR growisofs (1),
+.BR mpg123 (1),
+.BR ogg123 (1),
+.BR eject (1),
+.BR kdesu (1).
+.br
+.SH AUTHOR
+AutoJet was forked from TurboJet 2 and published by Raphaël Doursenaud <rdoursenaud@free.fr> in 2008.
+TurboJet 2 was written by David Weisgerber <weisgerber@mytum.de> in 2006 and was published in 2007.
+.PP
+This manual page was written by David Weisgerber <weisgerber@mytum.de> and Raphaël Doursenaud <rdoursenaud@free.fr>,
+for the Debian project (but may be used by others).

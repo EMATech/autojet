@@ -1,0 +1,28 @@
+2009/01/17 rdoursenaud
+  GPLv3 adoption
+
+2008/12/09 rdoursenaud
+	Removed unused audiofile feature
+	Removed useless reboot feature
+	Merged all images selection function (WIP)
+	New toolbar instead of a menu (WIP)
+	Image creation feature (WIP)
+	Code cleanup
+
+2008/10/08 rdoursenaud
+	New features:
+		* Added early blanking support (only fast blanking atm)
+		* Added halt/reboot support
+		* Translation support
+		* French translation
+		* Installation support
+	Modifications :
+		* Separated Cue Sheet support
+		* Added/Modified a bunch of keyboard shortcuts
+	Bug fixes :
+		* Fixed a bug causing the layout to go down after each access to the configuration
+		* Fixed a bug in the speed argument preventing cdrdao to start
+	Miscillaneous :
+		* Bumped version to 2.1
+		* Tiny code reorganisation and comments
+		* Added GPL snippet arround
