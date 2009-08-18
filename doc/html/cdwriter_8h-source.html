@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>AutoJet: /home/raph/Ematech/Sources/autojet/src/cdwriter.h Source File</title>
+<title>AutoJet: src/cdwriter.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -19,7 +19,7 @@
       <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>/home/raph/Ematech/Sources/autojet/src/cdwriter.h</h1><a href="cdwriter_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<h1>src/cdwriter.h</h1><a href="cdwriter_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
 <a name="l00002"></a>00002 <span class="comment">    Copyright (C) 2008-2009 Raphaël Doursenaud &lt;rdoursenaud@free.fr&gt;</span>
 <a name="l00003"></a>00003 <span class="comment">    Copyright (C) 2006 David Weisgerber &lt;weisgerber@mytum.de&gt;</span>
 <a name="l00004"></a>00004 <span class="comment"></span>
@@ -45,7 +45,7 @@
 <a name="l00024"></a>00024 <span class="preprocessor">#ifndef CDWRITER_H</span>
 <a name="l00025"></a>00025 <span class="preprocessor"></span><span class="preprocessor">#define CDWRITER_H</span>
 <a name="l00026"></a>00026 <span class="preprocessor"></span>
-<a name="l00027"></a>00027 <span class="keyword">class </span><a class="code" href="class_c_d_writer.html">CDWriter</a>;
+<a name="l00027"></a>00027 <span class="keyword">class </span><a class="code" href="classCDWriter.html">CDWriter</a>;
 <a name="l00028"></a>00028 
 <a name="l00029"></a>00029 <span class="preprocessor">#include &lt;QFrame&gt;</span>
 <a name="l00030"></a>00030 <span class="preprocessor">#include &lt;QSettings&gt;</span>
@@ -54,29 +54,29 @@
 <a name="l00033"></a>00033 <span class="preprocessor">#include "ui_maximum.h"</span>
 <a name="l00034"></a>00034 <span class="preprocessor">#include "<a class="code" href="autojet_8h.html">autojet.h</a>"</span>
 <a name="l00035"></a>00035 
-<a name="l00036"></a><a class="code" href="class_c_d_writer.html">00036</a> <span class="keyword">class </span><a class="code" href="class_c_d_writer.html">CDWriter</a> : <span class="keyword">public</span> QFrame
+<a name="l00036"></a><a class="code" href="classCDWriter.html">00036</a> <span class="keyword">class </span><a class="code" href="classCDWriter.html">CDWriter</a> : <span class="keyword">public</span> QFrame
 <a name="l00037"></a>00037 {
 <a name="l00038"></a>00038         Q_OBJECT
 <a name="l00039"></a>00039 <span class="keyword">public</span>:
-<a name="l00040"></a>00040         <a class="code" href="class_c_d_writer.html#44fe78fc3cfdb9c9cc0a427686141ade">CDWriter</a>( <a class="code" href="classautojet.html">autojet</a> *parent, QSettings *settings, <span class="keywordtype">int</span> number);
+<a name="l00040"></a>00040         <a class="code" href="classCDWriter.html#44fe78fc3cfdb9c9cc0a427686141ade">CDWriter</a>( <a class="code" href="classautojet.html">autojet</a> *parent, QSettings *settings, <span class="keywordtype">int</span> number);
 <a name="l00041"></a>00041 
-<a name="l00042"></a>00042         <a class="code" href="class_c_d_writer.html#072733059c989992f725774bee5331b7">~CDWriter</a>( <span class="keywordtype">void</span> );
-<a name="l00043"></a><a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">00043</a>         <span class="keywordtype">bool</span> <a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>() { <span class="keywordflow">return</span> idle; }
+<a name="l00042"></a>00042         <a class="code" href="classCDWriter.html#072733059c989992f725774bee5331b7">~CDWriter</a>( <span class="keywordtype">void</span> );
+<a name="l00043"></a><a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">00043</a>         <span class="keywordtype">bool</span> <a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>() { <span class="keywordflow">return</span> idle; }
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045 <span class="keyword">public</span> slots:
-<a name="l00046"></a>00046         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#383389be2723db312550f11951efd1a3">eject</a>( <span class="keywordtype">void</span> );
-<a name="l00047"></a>00047         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#a5dd84acfc0eb5f4a8dc8cb88b305996">create</a>( <span class="keywordtype">void</span> );
-<a name="l00048"></a>00048         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#74d2e90422414e44485b258b5be222d8">blank</a>( <span class="keywordtype">void</span> );
-<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#844d256e7cccd1de34db4e5fa3690dc6">burn</a>( <span class="keywordtype">void</span> );
-<a name="l00050"></a>00050         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#f7035db82b553bab5942c320a348728e">imagefile</a>( QString file );
-<a name="l00051"></a>00051         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#a3db5f6361622dd83a529340df737c11">minimize</a>( <span class="keywordtype">void</span> );
-<a name="l00052"></a>00052         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#2ea8afb43e2cdcd07b0d783dcf5ac989">maximize</a>( <span class="keywordtype">void</span> );
+<a name="l00046"></a>00046         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#383389be2723db312550f11951efd1a3">eject</a>( <span class="keywordtype">void</span> );
+<a name="l00047"></a>00047         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#a5dd84acfc0eb5f4a8dc8cb88b305996">create</a>( <span class="keywordtype">void</span> );
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#74d2e90422414e44485b258b5be222d8">blank</a>( <span class="keywordtype">void</span> );
+<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#844d256e7cccd1de34db4e5fa3690dc6">burn</a>( <span class="keywordtype">void</span> );
+<a name="l00050"></a>00050         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#f7035db82b553bab5942c320a348728e">imagefile</a>( QString file );
+<a name="l00051"></a>00051         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#a3db5f6361622dd83a529340df737c11">minimize</a>( <span class="keywordtype">void</span> );
+<a name="l00052"></a>00052         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#2ea8afb43e2cdcd07b0d783dcf5ac989">maximize</a>( <span class="keywordtype">void</span> );
 <a name="l00053"></a>00053 
 <a name="l00054"></a>00054 <span class="keyword">protected</span>:
-<a name="l00055"></a>00055         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#712e2295621dccbe6866a3b539a8006c">mouseReleaseEvent</a>( QMouseEvent * event );
+<a name="l00055"></a>00055         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#712e2295621dccbe6866a3b539a8006c">mouseReleaseEvent</a>( QMouseEvent * event );
 <a name="l00056"></a>00056 
 <a name="l00057"></a>00057 signals:
-<a name="l00058"></a>00058         <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#0191ce407c2ebb99f3140bb44b9a9170">clicked</a>( <span class="keywordtype">void</span> );
+<a name="l00058"></a>00058         <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#0191ce407c2ebb99f3140bb44b9a9170">clicked</a>( <span class="keywordtype">void</span> );
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060 <span class="keyword">private</span> slots:
 <a name="l00061"></a>00061         <span class="keywordtype">void</span> finished( <span class="keywordtype">int</span> exitCode, QProcess::ExitStatus exitStatus );
@@ -87,7 +87,7 @@
 <a name="l00066"></a>00066 
 <a name="l00067"></a>00067 <span class="keyword">private</span>:
 <a name="l00068"></a>00068         <span class="keywordtype">void</span> append( QString message );
-<a name="l00069"></a>00069         <span class="keywordtype">void</span> setIdle( <span class="keywordtype">bool</span> <a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a> );
+<a name="l00069"></a>00069         <span class="keywordtype">void</span> setIdle( <span class="keywordtype">bool</span> <a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a> );
 <a name="l00070"></a>00070         <span class="keywordtype">int</span> calculateCueSize( QString filename );
 <a name="l00071"></a>00071         <span class="keywordtype">void</span> setStatus( QString in );
 <a name="l00072"></a>00072         
@@ -120,7 +120,7 @@
 <a name="l00099"></a>00099 
 <a name="l00100"></a>00100 <span class="preprocessor">#endif</span>
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Wed Aug 19 01:47:29 2009 for AutoJet by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Wed Aug 19 01:54:37 2009 for AutoJet by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>

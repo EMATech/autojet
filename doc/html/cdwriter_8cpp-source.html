@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>AutoJet: /home/raph/Ematech/Sources/autojet/src/cdwriter.cpp Source File</title>
+<title>AutoJet: src/cdwriter.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -19,7 +19,7 @@
       <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>/home/raph/Ematech/Sources/autojet/src/cdwriter.cpp</h1><a href="cdwriter_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<h1>src/cdwriter.cpp</h1><a href="cdwriter_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
 <a name="l00002"></a>00002 <span class="comment">    Copyright (C) 2008-2009 Raphaël Doursenaud &lt;rdoursenaud@free.fr&gt;</span>
 <a name="l00003"></a>00003 <span class="comment">    Copyright (C) 2006 David Weisgerber &lt;weisgerber@mytum.de&gt;</span>
 <a name="l00004"></a>00004 <span class="comment"></span>
@@ -51,7 +51,7 @@
 <a name="l00030"></a>00030 <span class="preprocessor">#include "<a class="code" href="cdwriter_8h.html">cdwriter.h</a>"</span>
 <a name="l00031"></a>00031 <span class="preprocessor">#include "<a class="code" href="autojet_8h.html">autojet.h</a>"</span>
 <a name="l00032"></a>00032 
-<a name="l00033"></a><a class="code" href="class_c_d_writer.html#44fe78fc3cfdb9c9cc0a427686141ade">00033</a> <a class="code" href="class_c_d_writer.html#44fe78fc3cfdb9c9cc0a427686141ade">CDWriter::CDWriter</a>( <a class="code" href="classautojet.html">autojet</a> *parent, QSettings *settings, <span class="keywordtype">int</span> number)
+<a name="l00033"></a><a class="code" href="classCDWriter.html#44fe78fc3cfdb9c9cc0a427686141ade">00033</a> <a class="code" href="classCDWriter.html#44fe78fc3cfdb9c9cc0a427686141ade">CDWriter::CDWriter</a>( <a class="code" href="classautojet.html">autojet</a> *parent, QSettings *settings, <span class="keywordtype">int</span> number)
 <a name="l00034"></a>00034 {
 <a name="l00035"></a>00035         <span class="comment">// Set parent?</span>
 <a name="l00036"></a>00036         aj = parent;
@@ -64,10 +64,10 @@
 <a name="l00043"></a>00043         uiMax.setupUi( maxContainer );
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045         <span class="comment">// Connect signals</span>
-<a name="l00046"></a>00046         connect( uiMax.eject, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="class_c_d_writer.html#383389be2723db312550f11951efd1a3">eject</a>() ) );
-<a name="l00047"></a>00047         connect( uiMax.create, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="class_c_d_writer.html#a5dd84acfc0eb5f4a8dc8cb88b305996">create</a>() ) );
-<a name="l00048"></a>00048         connect( uiMax.blank, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="class_c_d_writer.html#74d2e90422414e44485b258b5be222d8">blank</a>() ) );
-<a name="l00049"></a>00049         connect( uiMax.burn, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="class_c_d_writer.html#844d256e7cccd1de34db4e5fa3690dc6">burn</a>() ) );
+<a name="l00046"></a>00046         connect( uiMax.eject, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="classCDWriter.html#383389be2723db312550f11951efd1a3">eject</a>() ) );
+<a name="l00047"></a>00047         connect( uiMax.create, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="classCDWriter.html#a5dd84acfc0eb5f4a8dc8cb88b305996">create</a>() ) );
+<a name="l00048"></a>00048         connect( uiMax.blank, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="classCDWriter.html#74d2e90422414e44485b258b5be222d8">blank</a>() ) );
+<a name="l00049"></a>00049         connect( uiMax.burn, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( <a class="code" href="classCDWriter.html#844d256e7cccd1de34db4e5fa3690dc6">burn</a>() ) );
 <a name="l00050"></a>00050         connect( uiMax.image, SIGNAL( pressed() ), <span class="keyword">this</span>, SLOT( select() ) );
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052         <span class="comment">// Set item colors</span>
@@ -123,14 +123,14 @@
 <a name="l00102"></a>00102         procModel-&gt;start( <span class="stringliteral">"cdrecord"</span>, QStringList() &lt;&lt; <span class="stringliteral">"dev="</span> + device &lt;&lt;
 <a name="l00103"></a>00103                                 <span class="stringliteral">"-prcap"</span> );
 <a name="l00104"></a>00104 
-<a name="l00105"></a>00105         <a class="code" href="class_c_d_writer.html#a3db5f6361622dd83a529340df737c11">minimize</a>();
+<a name="l00105"></a>00105         <a class="code" href="classCDWriter.html#a3db5f6361622dd83a529340df737c11">minimize</a>();
 <a name="l00106"></a>00106 }
 <a name="l00107"></a>00107 
-<a name="l00108"></a><a class="code" href="class_c_d_writer.html#072733059c989992f725774bee5331b7">00108</a> <a class="code" href="class_c_d_writer.html#072733059c989992f725774bee5331b7">CDWriter::~CDWriter</a>( <span class="keywordtype">void</span> )
+<a name="l00108"></a><a class="code" href="classCDWriter.html#072733059c989992f725774bee5331b7">00108</a> <a class="code" href="classCDWriter.html#072733059c989992f725774bee5331b7">CDWriter::~CDWriter</a>( <span class="keywordtype">void</span> )
 <a name="l00109"></a>00109 {
 <a name="l00110"></a>00110 }
 <a name="l00111"></a>00111 
-<a name="l00112"></a><a class="code" href="class_c_d_writer.html#2ea8afb43e2cdcd07b0d783dcf5ac989">00112</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#2ea8afb43e2cdcd07b0d783dcf5ac989">CDWriter::maximize</a>( <span class="keywordtype">void</span> )
+<a name="l00112"></a><a class="code" href="classCDWriter.html#2ea8afb43e2cdcd07b0d783dcf5ac989">00112</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#2ea8afb43e2cdcd07b0d783dcf5ac989">CDWriter::maximize</a>( <span class="keywordtype">void</span> )
 <a name="l00113"></a>00113 {
 <a name="l00114"></a>00114         setMinimumSize( maxContainer-&gt;minimumSize() );
 <a name="l00115"></a>00115         setMaximumSize( maxContainer-&gt;maximumSize() );
@@ -138,7 +138,7 @@
 <a name="l00117"></a>00117         maxContainer-&gt;show();
 <a name="l00118"></a>00118 }
 <a name="l00119"></a>00119 
-<a name="l00120"></a><a class="code" href="class_c_d_writer.html#a3db5f6361622dd83a529340df737c11">00120</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#a3db5f6361622dd83a529340df737c11">CDWriter::minimize</a>( <span class="keywordtype">void</span> )
+<a name="l00120"></a><a class="code" href="classCDWriter.html#a3db5f6361622dd83a529340df737c11">00120</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#a3db5f6361622dd83a529340df737c11">CDWriter::minimize</a>( <span class="keywordtype">void</span> )
 <a name="l00121"></a>00121 {
 <a name="l00122"></a>00122         setMinimumSize( minContainer-&gt;minimumSize() );
 <a name="l00123"></a>00123         setMaximumSize( minContainer-&gt;maximumSize() );
@@ -146,18 +146,18 @@
 <a name="l00125"></a>00125         minContainer-&gt;show();
 <a name="l00126"></a>00126 }
 <a name="l00127"></a>00127 
-<a name="l00128"></a><a class="code" href="class_c_d_writer.html#712e2295621dccbe6866a3b539a8006c">00128</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#712e2295621dccbe6866a3b539a8006c">CDWriter::mouseReleaseEvent</a>( QMouseEvent * event )
+<a name="l00128"></a><a class="code" href="classCDWriter.html#712e2295621dccbe6866a3b539a8006c">00128</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#712e2295621dccbe6866a3b539a8006c">CDWriter::mouseReleaseEvent</a>( QMouseEvent * event )
 <a name="l00129"></a>00129 {
 <a name="l00130"></a>00130         <span class="keywordflow">if</span> ( event-&gt;button() == Qt::LeftButton )
 <a name="l00131"></a>00131         {
-<a name="l00132"></a>00132                 emit <a class="code" href="class_c_d_writer.html#0191ce407c2ebb99f3140bb44b9a9170">clicked</a>();
+<a name="l00132"></a>00132                 emit <a class="code" href="classCDWriter.html#0191ce407c2ebb99f3140bb44b9a9170">clicked</a>();
 <a name="l00133"></a>00133         }
 <a name="l00134"></a>00134 }
 <a name="l00135"></a>00135 
 <a name="l00136"></a>00136 <span class="comment">// Ejects and loads the tray</span>
-<a name="l00137"></a><a class="code" href="class_c_d_writer.html#383389be2723db312550f11951efd1a3">00137</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#383389be2723db312550f11951efd1a3">CDWriter::eject</a>( <span class="keywordtype">void</span> )
+<a name="l00137"></a><a class="code" href="classCDWriter.html#383389be2723db312550f11951efd1a3">00137</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#383389be2723db312550f11951efd1a3">CDWriter::eject</a>( <span class="keywordtype">void</span> )
 <a name="l00138"></a>00138 {
-<a name="l00139"></a>00139         <span class="keywordflow">if</span> (!<a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>()) <span class="keywordflow">return</span>;
+<a name="l00139"></a>00139         <span class="keywordflow">if</span> (!<a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>()) <span class="keywordflow">return</span>;
 <a name="l00140"></a>00140 
 <a name="l00141"></a>00141         process = <span class="keyword">new</span> QProcess( <span class="keyword">this</span> );
 <a name="l00142"></a>00142 
@@ -169,9 +169,9 @@
 <a name="l00148"></a>00148         process-&gt;start( <span class="stringliteral">"eject"</span>, QStringList() &lt;&lt; <span class="stringliteral">"-T"</span> &lt;&lt; device );
 <a name="l00149"></a>00149 }
 <a name="l00150"></a>00150 
-<a name="l00151"></a><a class="code" href="class_c_d_writer.html#a5dd84acfc0eb5f4a8dc8cb88b305996">00151</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#a5dd84acfc0eb5f4a8dc8cb88b305996">CDWriter::create</a>( <span class="keywordtype">void</span> )
+<a name="l00151"></a><a class="code" href="classCDWriter.html#a5dd84acfc0eb5f4a8dc8cb88b305996">00151</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#a5dd84acfc0eb5f4a8dc8cb88b305996">CDWriter::create</a>( <span class="keywordtype">void</span> )
 <a name="l00152"></a>00152 {
-<a name="l00153"></a>00153         <span class="keywordflow">if</span> (!<a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>()) <span class="keywordflow">return</span>;
+<a name="l00153"></a>00153         <span class="keywordflow">if</span> (!<a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>()) <span class="keywordflow">return</span>;
 <a name="l00154"></a>00154         
 <a name="l00155"></a>00155         process = <span class="keyword">new</span> QProcess( <span class="keyword">this</span> );
 <a name="l00156"></a>00156         
@@ -181,9 +181,9 @@
 <a name="l00160"></a>00160 <span class="comment">// TODO implement "blank=all" alternative</span>
 <a name="l00161"></a>00161 <span class="comment">// TODO implement dvd+rw blanking (dvd+rw-format -force /dev/dvd)</span>
 <a name="l00162"></a>00162 <span class="comment">// TODO merge with burn? (Duplicate code)</span>
-<a name="l00163"></a><a class="code" href="class_c_d_writer.html#74d2e90422414e44485b258b5be222d8">00163</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#74d2e90422414e44485b258b5be222d8">CDWriter::blank</a>( <span class="keywordtype">void</span> )
+<a name="l00163"></a><a class="code" href="classCDWriter.html#74d2e90422414e44485b258b5be222d8">00163</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#74d2e90422414e44485b258b5be222d8">CDWriter::blank</a>( <span class="keywordtype">void</span> )
 <a name="l00164"></a>00164 {
-<a name="l00165"></a>00165         <span class="keywordflow">if</span> ( mode == 0 || !<a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>() ) <span class="keywordflow">return</span>;
+<a name="l00165"></a>00165         <span class="keywordflow">if</span> ( mode == 0 || !<a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>() ) <span class="keywordflow">return</span>;
 <a name="l00166"></a>00166         
 <a name="l00167"></a>00167         QString program;
 <a name="l00168"></a>00168         QStringList arguments;
@@ -222,9 +222,9 @@
 <a name="l00201"></a>00201 }
 <a name="l00202"></a>00202 
 <a name="l00203"></a>00203 <span class="comment">// TODO Autodetect Image type (ISO or CueSheet)</span>
-<a name="l00204"></a><a class="code" href="class_c_d_writer.html#f7035db82b553bab5942c320a348728e">00204</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#f7035db82b553bab5942c320a348728e">CDWriter::imagefile</a>( QString file )
+<a name="l00204"></a><a class="code" href="classCDWriter.html#f7035db82b553bab5942c320a348728e">00204</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#f7035db82b553bab5942c320a348728e">CDWriter::imagefile</a>( QString file )
 <a name="l00205"></a>00205 {
-<a name="l00206"></a>00206         <span class="keywordflow">if</span> (!<a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>()) <span class="keywordflow">return</span>;
+<a name="l00206"></a>00206         <span class="keywordflow">if</span> (!<a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>()) <span class="keywordflow">return</span>;
 <a name="l00207"></a>00207         
 <a name="l00208"></a>00208         QFileInfo getsize( file );
 <a name="l00209"></a>00209         
@@ -315,9 +315,9 @@
 <a name="l00294"></a>00294 <span class="comment">}</span>
 <a name="l00295"></a>00295 <span class="comment">*/</span>
 <a name="l00296"></a>00296 
-<a name="l00297"></a><a class="code" href="class_c_d_writer.html#844d256e7cccd1de34db4e5fa3690dc6">00297</a> <span class="keywordtype">void</span> <a class="code" href="class_c_d_writer.html#844d256e7cccd1de34db4e5fa3690dc6">CDWriter::burn</a>( <span class="keywordtype">void</span> )
+<a name="l00297"></a><a class="code" href="classCDWriter.html#844d256e7cccd1de34db4e5fa3690dc6">00297</a> <span class="keywordtype">void</span> <a class="code" href="classCDWriter.html#844d256e7cccd1de34db4e5fa3690dc6">CDWriter::burn</a>( <span class="keywordtype">void</span> )
 <a name="l00298"></a>00298 {
-<a name="l00299"></a>00299         <span class="keywordflow">if</span> ( mode == 0 || !<a class="code" href="class_c_d_writer.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>() ) <span class="keywordflow">return</span>;
+<a name="l00299"></a>00299         <span class="keywordflow">if</span> ( mode == 0 || !<a class="code" href="classCDWriter.html#ad6c510839af2c175cfabeaa3067431b">isIdle</a>() ) <span class="keywordflow">return</span>;
 <a name="l00300"></a>00300 
 <a name="l00301"></a>00301         QString program;
 <a name="l00302"></a>00302         QStringList arguments;
@@ -452,7 +452,7 @@
 <a name="l00431"></a>00431         
 <a name="l00432"></a>00432         <span class="keywordflow">if</span> ( uiMax.ejectBox-&gt;isChecked() &amp;&amp; wasburning )
 <a name="l00433"></a>00433         {
-<a name="l00434"></a>00434                 <a class="code" href="class_c_d_writer.html#383389be2723db312550f11951efd1a3">eject</a>();
+<a name="l00434"></a>00434                 <a class="code" href="classCDWriter.html#383389be2723db312550f11951efd1a3">eject</a>();
 <a name="l00435"></a>00435                 waseject = <span class="keyword">true</span>;
 <a name="l00436"></a>00436         } <span class="keywordflow">else</span> {
 <a name="l00437"></a>00437                 wasburning = <span class="keyword">false</span>;
@@ -587,7 +587,7 @@
 <a name="l00566"></a>00566         <span class="keywordflow">else</span>
 <a name="l00567"></a>00567                 cuefile = <span class="keyword">false</span>;
 <a name="l00568"></a>00568 
-<a name="l00569"></a>00569         <a class="code" href="class_c_d_writer.html#f7035db82b553bab5942c320a348728e">imagefile</a>( file );
+<a name="l00569"></a>00569         <a class="code" href="classCDWriter.html#f7035db82b553bab5942c320a348728e">imagefile</a>( file );
 <a name="l00570"></a>00570 }
 <a name="l00571"></a>00571 
 <a name="l00572"></a>00572 <span class="keywordtype">void</span> CDWriter::setIdle( <span class="keywordtype">bool</span> isIdle )
@@ -612,7 +612,7 @@
 <a name="l00591"></a>00591         }
 <a name="l00592"></a>00592 }
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Wed Aug 19 01:47:29 2009 for AutoJet by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Wed Aug 19 01:54:37 2009 for AutoJet by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
 </body>
